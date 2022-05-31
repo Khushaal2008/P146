@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-entity position="0 2 0">
+                <a-box position="-7 0 -5" height="3" color="lightblue"></a-box>
+                <a-box position="7 0 -5" height="3" color="lightblue"></a-box>
+                <a-cylinder position="0 0 -5" rotation="0 0 90" radius=".2" height="16" color="grey"></a-cylinder>
+                <a-box position="-5 0 -5" animation="property: position; to: 5 0 -5; dir:alternate; loop:true; dur:1000" color="tomato">
+                    <a-cylinder position="0 -.3 0" radius="0.1" height="2" color="orange">
+                        <a-cone position=" 0 -1 0" rotation="0 0 180" radius-bottom=".1" radius-top=".02" color="black"></a-cone>
+                    </a-cylinder>
+                </a-box>
+            </a-entity>
+
+            <a-plane position=" 0 0 -5" rotation="-90 0 0" height="5" width="3"></a-plane>
+            <a-sky color="#EFD224"></a-sky>
+        </a-scene>
+    </body>
+</html>
